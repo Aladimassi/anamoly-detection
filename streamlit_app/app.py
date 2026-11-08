@@ -137,7 +137,7 @@ area = 100 * pred.mean()
 
 col_img, col_res = st.columns([3, 1], gap="large")
 with col_img:
-    st.image(render(img, prob, thr, view, gt), caption=label, use_container_width=True)
+    st.image(render(img, prob, thr, view, gt), caption=label, width="stretch")
     legends = {
         "Detection": "🟧 Flagged as anomaly (probability ≥ threshold)",
         "Probability": "Colour = anomaly probability, from dark (0) to yellow (1)",
