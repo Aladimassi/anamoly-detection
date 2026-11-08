@@ -1,0 +1,13 @@
+# dataset and generated artefacts (re-created by the notebook / scripts)
+data/
+RoadAnomaly/
+*.zip
+checkpoints/
+weights/
+onnx/
+figures/
+results_test.*
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/

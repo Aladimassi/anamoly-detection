@@ -1,0 +1,12 @@
+# training / evaluation (notebook and scripts)
+torch>=2.1
+torchvision>=0.16
+segmentation-models-pytorch==0.5.0
+numpy
+pillow
+pandas
+matplotlib
+scikit-learn
+# export to the browser / Streamlit model
+onnx
+onnxruntime
