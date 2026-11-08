@@ -14,5 +14,5 @@ if not exist ".venv\Scripts\python.exe" (
   ".venv\Scripts\python.exe" -m pip install -r requirements.txt || (echo Package installation failed. & pause & exit /b 1)
 )
 echo Starting the app at http://localhost:8501  (close this window to stop it)
-".venv\Scripts\python.exe" -m streamlit run app.py
+".venv\Scripts\python.exe" -m streamlit run app.py --server.headless false
 pause

@@ -50,7 +50,7 @@ def predict(img: Image.Image):
     t0 = time.perf_counter()
     prob = load_session().run(None, {"image": x})[0][0, 0]
     ms = (time.perf_counter() - t0) * 1000
-    prob_up = np.asarray(Image.fromarray(prob.astype(np.float32), mode="F").resize(img.size, Image.BILINEAR))
+    prob_up = np.asarray(Image.fromarray(prob.astype(np.float32)).resize(img.size, Image.BILINEAR))
     return np.clip(prob_up, 0, 1), ms
 
 
